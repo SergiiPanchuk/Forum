@@ -158,7 +158,7 @@
     font-weight: 700;
 }
 .contacts {
-    background: var(--background-contacts-header);
+    background: var(--cards-background-color);
 }
 .contacts__container {
     padding: 40px 24px;
