@@ -1,0 +1,12 @@
+.header__btn {
+    font-size: 15.4px;
+    font-family: var(--font-soure-sans);
+    font-weight: 900;
+    padding: 18px 35px;
+    background-color: var(--btn-color);
+    color: var(--text-color-white);
+    text-decoration: none; 
+}
+.header__btn:hover {
+    background-color: var(--btn-color-hover);
+}

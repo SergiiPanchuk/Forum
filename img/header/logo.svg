@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1142px" height="367px" viewBox="0 0 1142 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -13.000000)">
+            <g id="building" transform="translate(0.000000, 13.000000)" fill="#D1B997" fill-rule="nonzero">
+                <rect id="Rectangle" x="247" y="275" width="21" height="31"></rect>
+                <rect id="Rectangle" x="287" y="275" width="21" height="31"></rect>
+                <rect id="Rectangle" x="247" y="206" width="21" height="31"></rect>
+                <rect id="Rectangle" x="287" y="206" width="21" height="31"></rect>
+                <rect id="Rectangle" x="247" y="138" width="21" height="31"></rect>
+                <rect id="Rectangle" x="287" y="138" width="21" height="31"></rect>
+                <rect id="Rectangle" x="287" y="68" width="21" height="31"></rect>
+                <rect id="Rectangle" x="127" y="275" width="21" height="31"></rect>
+                <rect id="Rectangle" x="168" y="275" width="21" height="31"></rect>
+                <rect id="Rectangle" x="127" y="206" width="21" height="31"></rect>
+                <rect id="Rectangle" x="168" y="206" width="21" height="31"></rect>
+                <rect id="Rectangle" x="168" y="138" width="21" height="31"></rect>
+                <path d="M347.169098,345.496094 L347.169098,0 L286.97608,0 L228.190135,61.5821699 L168.17775,61.5821699 L88.069248,145.502598 L88.069248,345.496094 L50.5341797,345.496094 L50.5341797,322.742811 C67.2613516,318.039189 79.5644531,302.658879 79.5644531,284.449371 C79.5644531,262.513236 61.7183613,244.667145 39.7822266,244.667145 C17.8460918,244.667145 0,262.51252 0,284.448654 C0,302.658879 12.3031016,318.039189 29.0302734,322.742094 L29.0302734,345.496094 L0,345.496094 L0,367 L367,367 L367,345.496094 L347.169098,345.496094 Z M21.5039063,284.448654 C21.5039063,274.369773 29.7033457,266.170334 39.7822266,266.170334 C49.8611074,266.170334 58.0605469,274.369773 58.0605469,284.448654 C58.0605469,294.527535 49.8611074,302.726975 39.7822266,302.726975 C29.7033457,302.726975 21.5039063,294.528252 21.5039063,284.448654 Z M206.867578,345.496094 L109.573154,345.496094 L109.573154,154.118496 L177.379271,83.0860762 L206.867578,83.0860762 L206.867578,345.496094 Z M325.665191,345.496094 L228.371484,345.496094 L228.371484,92.5363262 L296.176885,21.5039063 L325.665191,21.5039063 L325.665191,345.496094 Z" id="Shape"></path>
+            </g>
+            <text id="Forum" font-family="Lato-Black, Lato" font-size="200" font-weight="700" letter-spacing="2" fill="#FFFFFF">
+                <tspan x="435" y="197">Forum</tspan>
+            </text>
+            <text id="business-center" font-family="Lato-Black, Lato" font-size="80" font-weight="700" letter-spacing="10.00303" fill="#AEAEAE">
+                <tspan x="439" y="320">business center</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
