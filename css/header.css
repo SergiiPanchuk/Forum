@@ -1,0 +1,212 @@
+.header__container {
+    background-image: url(../img/header/header-background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.background-darkened {
+    background-color:var(--background-darkened);
+}
+.nav__container {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.nav__logo-container {
+    display: inline-block;
+    height: 56px;
+    width: 174px;
+    z-index: 10;
+}
+.nav__logo-container>a>img {
+    height: 100%;
+}
+.burger {
+    z-index: 7;
+    cursor: pointer;
+    width: 24px;
+    height: 26px;
+}
+.burger span {
+    border-bottom: 2px solid var(--text-color);
+    width: 24px;
+    display: block;
+    transition:  all 0.5s;
+}
+.burger span:nth-child(1){
+    position: relative;
+    top: 18px;
+}
+.burger span:nth-child(3){
+    position: relative;
+    top: 6px;
+}
+.burger.active span:first-of-type {
+   opacity: 0;
+}
+.burger.active span:nth-child(2) {
+    transform: translate(0, 200%) rotate(-45deg);
+}
+.burger.active span:nth-child(3) {
+    transform: translate(0, -200%) rotate(45deg);
+}
+@media (max-width:991.5px) {
+    .burger__links {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: var(--background-contact-color);
+        padding-top: 95px;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+}
+.burger__links-active {
+    transform: translateX(0);
+}
+.header__text-links a {
+    display: block;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 10px 5px;
+}
+.header__text-links a:hover {
+    color: var(--btn-color);
+}
+.header__social-links a {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--btn-color);
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.header__social-links a:hover {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+.header__social-links a img{
+    width: 13px;
+    height: inherit;
+}
+@media (min-width:991.5px) {
+    .nav {
+        background-color:var(--background-header-nav);
+    }
+    .links__container {
+        display: flex;
+        align-items: center;
+    }
+    .header__text-links a {
+        display: inline;
+        margin-right: 15px;
+    }
+    .header__social-links a {
+        margin-top: 5px;
+    }
+    .burger {
+        display: none;
+    }
+}
+.article__container {
+    padding: 130px 24px;
+}
+@media (min-width:991.5px) {
+    .article__container{
+        padding: 250px 40px 270px;
+    } 
+}
+.header__title {
+    font-size: 56px;
+    font-family: var(--font-header-title);
+    color: var(--text-color);
+}
+@media (min-width:767.5px) {
+    .header__title {
+        font-size: 63px;
+    }
+}
+@media (min-width:991.5px) {
+    .header__title {
+        font-size: 70px;
+    }
+}
+.header__title> span {
+    color: var(--dot-color);
+}
+.header__subtitle {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: 35px;
+}
+.header__btn {
+    font-family: var(--font-family);
+    margin-top: 50px;
+    display: inline-block;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.contacts {
+    background: var(--background-contacts-header);
+}
+.contacts__container {
+    padding: 40px 24px;
+    color: var(--text-color);
+}
+@media (min-width:991.5px) {
+    .contacts__container {
+        padding: 40px 40px;
+    }
+}
+.contacts__text {
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+.contacts__tel, .contacts__mail, .contacts__location {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts__tel a, .contacts__mail a {
+    font-size: 16px;
+    font-family: var(--font-family);
+    text-decoration: none;
+    color: var(--text-color);
+}
+.contacts__tel a:hover, .contacts__mail a:hover{
+    color: rgb(96, 197, 164);
+}
+.contacts__container img {
+    width: 18px;
+    height: 18px;
+}
+.contacts__location p {
+    color: var(--color-header-location);
+}
+@media (min-width:767.5px) {
+    .contacts__container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contacts__tel, .contacts__mail, .contacts__location {
+        margin: 0 0 0 18px;
+    }
+    .contacts__container {
+        justify-content: space-between;
+    }
+    .contacts__wrapper {
+        display: flex;
+    }
+}
