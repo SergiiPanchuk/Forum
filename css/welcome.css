@@ -1,0 +1,91 @@
+.welcome__section {
+    background-color: var(--main-background-color);
+    padding: 90px 20px 50px 20px;
+}
+.welcome__title {
+    color: var(--text-color);
+}
+@media (min-width:767.5px) {
+    .welcome__title {
+        max-width: 66%;
+    }
+    .welcome__section{
+        padding: 90px 32px 50px 32px;
+    }
+}
+.welcome__title h2 {
+    color: var(--icons-color);
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+.welcome__title h3 {
+    font-family: var(--font-header-title);
+    font-size: 34px;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+@media (min-width:767.5px) {
+    .welcome__title h3 {
+        font-size: 38px;
+    }
+}
+.welcome__title h3 span{
+    color: var(--dot-color);
+}
+.welcome__title p{
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.welcome__card {
+    color: var(--text-color);
+    margin-top: 45px;
+}
+@media (min-width:767.5px) {
+    .welcome__card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.welcome__card h3{
+    font-family: var(--font-header-title);
+    font-size: 22px;
+    line-height: 1.6;
+}
+.welcome__card p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--secondary-font-color);
+    margin-top: 20px;
+}
+.card__security, .card__friendly, .card__equipment{
+    display: flex;
+    margin-top: 45px;
+}
+@media (min-width:767.5px) {
+    .card__security, .card__friendly, .card__equipment {
+        flex-basis: 50%;
+    }
+}
+@media (min-width:991.5px) {
+    .card__security, .card__friendly, .card__equipment {
+        flex-basis: 33.3333%;
+    }
+}
+.card__img img{
+    width: 50px;
+    height: 50px;
+}
+@media (min-width:767.5px) {
+    .card__img img{
+        width: 70px;
+        height: 70px;
+    }
+}
+.welcome__card-text {
+    margin-left: 15px;
+}

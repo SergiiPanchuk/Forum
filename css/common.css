@@ -25,3 +25,9 @@
     --shadow-color: rgba(0, 0, 0, 0.7);
     scroll-behavior: smooth;
 }
+@media (min-width: 1043px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

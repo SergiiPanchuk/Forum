@@ -210,3 +210,14 @@
         display: flex;
     }
 }
+@media (min-width: 1043px) {
+    .nav__container {
+        padding: 20px 0;
+    }
+    .article__container {
+        padding: 250px 0px 270px;
+    }
+    .contacts__container {
+        padding: 40px 0;
+    }
+}
