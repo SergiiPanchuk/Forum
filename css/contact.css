@@ -1,0 +1,91 @@
+.section__contact{
+    background: var(--background-contact-color);
+    
+}
+.contact-main__section{
+    margin: 0px 25px 15px 15px;
+    padding: 25px 0;
+    margin: auto;
+}
+#contacts_us{
+    margin-left: 15px;
+}
+.contact-section__heading{
+    color: var(--text-color-white);
+    font-size: 34px;
+    font-family: var(--font-header-title);
+    padding-left: 15px;
+    padding: 20px;
+}
+.section-card__price-description{
+    color: var(--text-color-white);
+    font-size: 18px;
+    font-family: var(--font-family);
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.contact__map{
+    width: 360px;
+    height: 700px;
+    margin: auto;
+}
+.frame-contact__map{
+    height: 100%;
+    width: 100%;
+}
+.contact__inputs, .contact__textarea{
+    width: 90%;
+    font-size: 14px;
+    font-family: var(--font-family);
+    display: block;
+    border: 0;
+    background-color: var(--background-contact-color);
+    padding: 14px 26px 14px 26px;
+    color: var(--grey-small-text-color);
+    font-weight: 700;
+    margin: 12px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-radius: 0px;
+    border-color: #191919;
+}
+.contact__textarea{
+    resize: none;
+}
+.contact__btn{
+    width: 85%;
+    height: 40px;
+    margin: 50px 0px 0px 25px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    border: 0;
+    background-color: var(--section__subheading-color);
+    color: var(--text-color-white);
+
+
+}   
+.contact__slider > img{
+    width: 270px;
+    padding: 15px;
+}
+@media (min-width:750px){
+    .contact__form{
+        display: flex;
+        margin: auto;
+    }
+    .contact-main__section{
+        width: 665px;
+        margin-right: 0px;
+    }
+    .contact__map{
+        width: 600px;
+        height: 700px;
+        margin: auto;
+        margin-left: 0px;
+    }
+}
+@media (min-width:600px){
+    .contact__map{
+        width: 500px;
+    }
+}
