@@ -9,7 +9,6 @@
 .section__feedback-first,
 .section__feedback-second,
 .section__feedback-third{
-    width: 85%;
     padding: 50px;
 }
 #testimonials{
@@ -55,7 +54,6 @@
 }
 
 .section__feedbacks{
-    width: 600px;
     margin-top: 20px;
 }
 
@@ -95,7 +93,7 @@
     color: var(--text-color);
 }
 
-@media(min-width: 767px) {
+@media(min-width: 766.5px) {
     .section__feedback-first,
     .section__feedback-second,
     .section__feedback-third {
@@ -104,6 +102,7 @@
 }
 .slider__container {
     overflow: hidden;
+    position: relative;
 }
 .slider__track {
     display: flex;
@@ -114,4 +113,41 @@
 }
 .slider__buttons {
     text-align: center;
+}
+.btn__prev, .btn__next {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+}
+@media(min-width: 766.5px){
+    .btn__prev, .btn__next{
+        width: 32px;
+        height: 32px;
+    }
+}
+.btn__next {
+    top: 50%;
+    right: 0%;
+}
+.btn__prev {
+    top: 50%;
+    left: 0%;
+}
+.btn__prev-svg, .btn__next-svg {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    display: block;
+    fill: #141414;
+}
+@media(min-width: 766.5px){
+    .btn__prev-svg, .btn__next-svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+.btn__prev-svg {
+    transform: rotateY(180deg);
 }
