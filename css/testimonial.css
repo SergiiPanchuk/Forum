@@ -1,21 +1,17 @@
 .testimonial__container{
     padding: 100px 15px 0 15px;
 }
-
 .section__feedbacks{
     display: flex;  
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .section__feedback-first,
 .section__feedback-second,
 .section__feedback-third{
-    margin: 15px;
     width: 85%;
     padding: 50px;
 }
-
 #testimonials{
     color: var(--text-color);
     background-color: #141414;
