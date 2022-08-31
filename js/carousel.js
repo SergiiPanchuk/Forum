@@ -1,6 +1,6 @@
 (function (){
     let position = 0;
-    const slideToShow = 1;
+    const slideToShow = 2;
     const slideToScroll = 1;
     const container = document.querySelector('.slider__container');
     const track = document.querySelector('.slider__track');
@@ -12,7 +12,7 @@
     const movePosition = slideToScroll * itemWidth;
 
     items.forEach((item) => {
-        item.style.minWidth = `${itemWidth}px`;
+        item.style.minWidth = `${itemWidth - 70}px`;
     });
 
     btnNext.addEventListener('click', () => {

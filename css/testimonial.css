@@ -9,11 +9,18 @@
 .section__feedback-first,
 .section__feedback-second,
 .section__feedback-third{
-    padding: 50px;
+    padding: 35px;
+}
+@media(min-width: 766.5px) {
+    .section__feedback-first,
+    .section__feedback-second,
+    .section__feedback-third {
+        
+    }
 }
 #testimonials{
     color: var(--text-color);
-    background-color: #141414;
+    background-color: var(--background-contact-color);
 }
 #testimonials .section__subheading{
     font-family: var(--font-family);
@@ -57,8 +64,8 @@
     margin-top: 20px;
 }
 
-.section__feedbacks > div{
-    background-color: rgb(25, 25, 25)
+.section__feedbacks {
+   background-color: var(--background-contact-color);
 }
 
 .section__profile{
@@ -93,13 +100,7 @@
     color: var(--text-color);
 }
 
-@media(min-width: 766.5px) {
-    .section__feedback-first,
-    .section__feedback-second,
-    .section__feedback-third {
-        width: 45%;
-    }
-}
+
 .slider__container {
     overflow: hidden;
     position: relative;
@@ -109,7 +110,9 @@
     transition: .2s;
 }
 .slider__item {
-
+    background: var(--cards-background-color);
+    padding: 30px;
+    height: 100%;
 }
 .slider__buttons {
     text-align: center;
