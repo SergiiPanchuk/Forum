@@ -11,13 +11,6 @@
 .section__feedback-third{
     padding: 35px;
 }
-@media(min-width: 766.5px) {
-    .section__feedback-first,
-    .section__feedback-second,
-    .section__feedback-third {
-        
-    }
-}
 #testimonials{
     color: var(--text-color);
     background-color: var(--background-contact-color);
