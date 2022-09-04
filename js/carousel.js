@@ -11,12 +11,6 @@
     let itemWidth = container.clientWidth / slideToShow;
     let movePosition = slideToScroll * itemWidth;
 
-    window.addEventListener('resize', size());
-    
-    items.forEach((item) => {
-        item.style.minWidth = `${itemWidth - 70}px`;
-    });
-
     btnNext.addEventListener('click', () => {
         const itemsLeft = itemsCount - (Math.abs(position) + slideToShow * itemWidth) / itemWidth;
         position -= itemsLeft >= slideToScroll ? movePosition : itemsLeft * itemWidth;
@@ -29,27 +23,32 @@
         position += itemsLeft >= slideToScroll ? movePosition : itemsLeft * itemWidth;
         setPosition();
         checkBtns();
-    })
+    });
 
-    const setPosition = () => {
-        track.style.transform = `translateX(${position}px)`;
-    }
-    const checkBtns= () => {
+    function checkBtns() {
         btnPrev.ariaDisabled = position === 0;
         btnNext.ariaDisabled = position <= -(itemsCount - slideToShow) * itemWidth;
-    }
+    };
    function size() {
         if (window.innerWidth > 766) {
             slideToShow = 2;
-            let itemWidth = container.clientWidth / slideToShow;
-            let movePosition = slideToScroll * itemWidth;
+            itemWidth = container.clientWidth / slideToShow;
+            movePosition = slideToScroll * itemWidth;
             items.forEach((item) => {
                 item.style.minWidth = `${itemWidth - 70}px`;
             });
-            
             setPosition();
-            checkBtns();
+        }else {
+            items.forEach((item) => {
+            item.style.minWidth = `${itemWidth - 70}px`;
+            setPosition();
+            });
         }
-    }
+        
+    };
+    window.addEventListener('resize', size());
 
+    function setPosition() {
+        track.style.transform = `translateX(${position}px)`;
+    };
 })();

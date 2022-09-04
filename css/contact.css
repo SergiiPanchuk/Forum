@@ -1,6 +1,5 @@
 .section__contact{
     background: var(--background-contact-color);
-    
 }
 .contact-main__section{
     margin: 0px 25px 15px 15px;
@@ -10,23 +9,28 @@
 #contacts_us{
     margin-left: 15px;
 }
+.section__subheading {
+    color: var( --section__subheading-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+}
 .contact-section__heading{
-    color: var(--text-color-white);
+    color: var(--text-color);
     font-size: 34px;
     font-family: var(--font-header-title);
-    padding-left: 15px;
-    padding: 20px;
+    padding: 24px;
 }
 .section-card__price-description{
-    color: var(--text-color-white);
+    color: var(--text-color);
     font-size: 18px;
     font-family: var(--font-family);
     padding-bottom: 20px;
     padding-left: 20px;
 }
 .contact__map{
-    width: 360px;
-    height: 700px;
+    width: 90%;
+    height: 620px;
     margin: auto;
 }
 .frame-contact__map{
@@ -40,10 +44,10 @@
     display: block;
     border: 0;
     background-color: var(--background-contact-color);
-    padding: 14px 26px 14px 26px;
+    padding: 14px 26px ;
     color: var(--grey-small-text-color);
     font-weight: 700;
-    margin: 12px;
+    margin: auto;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-radius: 0px;
@@ -51,18 +55,20 @@
 }
 .contact__textarea{
     resize: none;
+    max-height: 150px;
+    margin-bottom: 55px;
 }
 .contact__btn{
-    width: 85%;
+    display: block;
+    width: 90%;
     height: 40px;
-    margin: 50px 0px 0px 25px;
+    padding: 14px 26px ;
+    margin: auto;
     font-family: var(--font-family);
     font-weight: 700;
     border: 0;
     background-color: var(--section__subheading-color);
-    color: var(--text-color-white);
-
-
+    color: var(--text-color);
 }   
 .contact__slider > img{
     width: 270px;
@@ -71,21 +77,12 @@
 @media (min-width:750px){
     .contact__form{
         display: flex;
+        padding: 0 32px;
         margin: auto;
     }
     .contact-main__section{
-        width: 665px;
-        margin-right: 0px;
     }
     .contact__map{
-        width: 600px;
-        height: 700px;
         margin: auto;
-        margin-left: 0px;
-    }
-}
-@media (min-width:600px){
-    .contact__map{
-        width: 500px;
     }
 }
