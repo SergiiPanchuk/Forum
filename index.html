@@ -8,6 +8,7 @@
     <title>Business Center Website Template Demo</title>
     <link rel="icon" href="img/header/titlelogo.png">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -356,8 +357,22 @@
                             </div>
                             <!-- END THIRD PROFILE -->
                         </div>
-                        <button class="btn__prev"><svg class="btn__prev-svg" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1659372432147"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1659372432147"></use></svg></button>
-                        <button class="btn__next"><svg class="btn__next-svg" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1659372432147"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1659372432147"></use></svg></button>
+                        <button class="btn__prev"><svg class="btn__prev-svg" viewBox="0 0 30 30">
+                                <defs>
+                                    <path
+                                        d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                                        id="a-1659372432147"></path>
+                                </defs>
+                                <use fill-rule="nonzero" opacity=".8" xlink:href="#a-1659372432147"></use>
+                            </svg></button>
+                        <button class="btn__next"><svg class="btn__next-svg" viewBox="0 0 30 30">
+                                <defs>
+                                    <path
+                                        d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                                        id="a-1659372432147"></path>
+                                </defs>
+                                <use fill-rule="nonzero" opacity=".8" xlink:href="#a-1659372432147"></use>
+                            </svg></button>
                     </div>
                 </div>
             </div>
@@ -371,13 +386,16 @@
                     <p class="section-card__price-description">Feel free to contact us to learn more about the options
                         we offer:
                     </p>
-                    <form class="contact_form-send" action="/" method="post">
-                        <input type="text" class="contact__inputs" placeholder="Enter your full name*" required>
-                        <input type="phone" name="phone" class="contact__inputs" placeholder="Enter your phone number*" required>
-                        <input type="text" class="contact__inputs" placeholder="Enter your e-mail*" required>
-                        <textarea class="contact__textarea" name="contact__textarea" id="contact__textarea" cols="30"
-                            rows="10" placeholder="Type your message" maxlength="2000" required></textarea>
-                        <button class="contact__btn">Scheudule a Visit</button>
+                    <form class="contact_form-send" action="https://formspree.io/f/xgeqonby" method="post">
+                        <input type="text" name="name" class="contact__inputs _req" placeholder="Enter your full name*"
+                            required>
+                        <input type="phone" name="phone" class="contact__inputs _req" placeholder="Enter your phone number*"
+                            required>
+                        <input type="email" name="email" class="contact__inputs _req" placeholder="Enter your e-mail*"
+                            required>
+                        <textarea name="message" class="contact__textarea" id="contact__textarea" cols="30" rows="10"
+                            placeholder="Type your message" maxlength="2000" required></textarea>
+                        <button type="submit" class="contact__btn trigger">Scheudule a Visit</button>
                     </form>
                 </div>
 
@@ -389,14 +407,27 @@
                 </div>
             </div>
             <div class="contact__slider">
-              
+
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
+    <div class="modal">
+        <div class="modal-content">
+            <img  src="img/modal/close-icon.svg" class="close-button">
+            <img src="img/modal/ok-icon.svg" alt="ok-icon">
+            <h5>Thank you!</h5>
+            <p>We will contact you shortly.</p>
+            <button>Ok</button>
+        </div>
+    </div>
     <script src="dist/inputmask.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/input-mask.js"></script>
+    <script src="js/modal-form.js"></script>
 </body>
 
 </html>
