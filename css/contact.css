@@ -69,6 +69,7 @@
     border: 0;
     background-color: var(--section__subheading-color);
     color: var(--text-color);
+    cursor: pointer;
 }   
 .contact_form-send ._error {
     box-shadow: 0 0 15px red;

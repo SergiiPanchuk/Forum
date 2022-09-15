@@ -1,5 +1,19 @@
 (function(){
 	document.addEventListener('DOMContentLoaded', function () {
+
+		const modal = document.querySelector(".modal");
+		const trigger = document.querySelector(".trigger");
+		const closeButton = document.querySelector(".close-button");
+
+		function toggleModal(ev) {
+			modal.classList.toggle("show-modal");
+			ev.stopPropagation();
+		}
+		
+		closeButton.addEventListener("click", toggleModal);
+		modal.addEventListener("click", toggleModal);
+		
+
 		const form = document.querySelector('.contact_form-send');
 		form.addEventListener('submit', formSend);
 
@@ -22,8 +36,10 @@
 					alert(result.message);
 					form.reset();
 					form.classList.remove('_sending');
+					modal.classList.add('show-modal');
 				}else{
-					alert('Error');
+					modal.classList.add('show-modal');
+					alert('не пройшов респонс');
 					form.classList.remove('_sending');
 				}
 			}else{
@@ -45,7 +61,7 @@
 						formAddError(input);
 						error++;
 					}
-				} else{
+				} else {
 					if(input.value === '') {
 						formAddError(input);
 						error++;
