@@ -70,6 +70,28 @@
     background-color: var(--section__subheading-color);
     color: var(--text-color);
 }   
+.contact_form-send ._error {
+    box-shadow: 0 0 15px red;
+}
+.contact_form-send {
+    position: relative;
+}
+.contact_form-send::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background:var(--backg-form-load) url(/img/contact-form/loading.gif) center / 50px no-repeat;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.contact_form-send._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
 .contact__slider > img{
     width: 270px;
     padding: 15px;
@@ -86,3 +108,4 @@
         margin: auto;
     }
 }
+

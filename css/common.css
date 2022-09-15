@@ -24,6 +24,7 @@
     --section__subheading-color: rgb(209, 185, 151);
     --grey-small-text-color: rgb(169, 169, 169);
     --shadow-color: rgba(0, 0, 0, 0.7);
+    --backg-form-load:  rgba(51, 51, 51, 0.9);
     scroll-behavior: smooth;
 }
 @media (min-width: 1043px) {

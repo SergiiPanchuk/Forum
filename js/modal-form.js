@@ -10,6 +10,7 @@
 	}
 
 	function showModal() {
+		event.preventDefault();
 		let error = 0;
 		let formReq = document.querySelectorAll('._req')
 		for (let index = 0; index < formReq.length; index++) {

@@ -386,15 +386,12 @@
                     <p class="section-card__price-description">Feel free to contact us to learn more about the options
                         we offer:
                     </p>
-                    <form class="contact_form-send" action="https://formspree.io/f/xgeqonby" method="post">
-                        <input type="text" name="name" class="contact__inputs _req" placeholder="Enter your full name*"
-                            required>
-                        <input type="phone" name="phone" class="contact__inputs _req" placeholder="Enter your phone number*"
-                            required>
-                        <input type="email" name="email" class="contact__inputs _req" placeholder="Enter your e-mail*"
-                            required>
+                    <form class="contact_form-send" >
+                        <input type="text" name="name" class="contact__inputs _req" placeholder="Enter your full name*">
+                        <input type="phone" name="phone" class="contact__inputs _req" placeholder="Enter your phone number*">
+                        <input type="email" name="email" class="contact__inputs _req _email" placeholder="Enter your e-mail*">
                         <textarea name="message" class="contact__textarea" id="contact__textarea" cols="30" rows="10"
-                            placeholder="Type your message" maxlength="2000" required></textarea>
+                            placeholder="Type your message" maxlength="2000" ></textarea>
                         <button type="submit" class="contact__btn trigger">Scheudule a Visit</button>
                     </form>
                 </div>
@@ -427,7 +424,7 @@
     <script src="js/burger.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/input-mask.js"></script>
-    <script src="js/modal-form.js"></script>
+    <script src="js/form-send.js"></script>
 </body>
 
 </html>
