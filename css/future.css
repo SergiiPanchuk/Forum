@@ -1,0 +1,24 @@
+.future__section {
+	background-color: var(--main-background-color);
+	color: var(--text-color);
+	padding: 90px 24px 0 24px;
+}
+.future__text {
+
+}
+.future__text h2 {
+	font-family: var(--font-family);
+	font-size: 14px;
+	color: var(--icons-color);
+}
+.future__text p {
+	font-family: var(--font-header-title);
+	font-size: 34px;
+	color: var( --text-color);
+	padding: 20px 0 25px 0;
+}
+.future__text span {
+	font-family: var(--font-family);
+	font-size: 18px;
+	color: var( --text-color);
+}
