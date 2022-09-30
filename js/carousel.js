@@ -25,6 +25,10 @@
         checkBtns();
     });
 
+    function setPosition() {
+        track.style.transform = `translateX(${position}px)`;
+    };
+    
     function checkBtns() {
         btnPrev.ariaDisabled = position === 0;
         btnNext.ariaDisabled = position <= -(itemsCount - slideToShow) * itemWidth;
@@ -47,8 +51,6 @@
         
     };
     window.addEventListener('resize', size());
-
-    function setPosition() {
-        track.style.transform = `translateX(${position}px)`;
-    };
+    setInterval(size, 1);
+    
 })();
