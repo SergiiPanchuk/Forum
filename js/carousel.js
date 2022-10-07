@@ -50,7 +50,6 @@
         }
         
     };
-    window.addEventListener('resize', size());
+    window.addEventListener('resize', size);
     setInterval(size, 1);
-    
 })();

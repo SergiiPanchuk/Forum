@@ -140,7 +140,7 @@
         font-size: 70px;
     }
 }
-.header__title> span {
+.span__dot {
     color: var(--dot-color);
 }
 .header__subtitle {

@@ -1,7 +1,7 @@
 .future__section {
 	background-color: var(--main-background-color);
 	color: var(--text-color);
-	padding: 90px 24px 0 24px;
+	padding: 90px 24px 50px 24px;
 }
 .future__text {
 
@@ -17,7 +17,7 @@
 	color: var( --text-color);
 	padding: 20px 0 25px 0;
 }
-.future__text span {
+.future__text>span {
 	font-family: var(--font-family);
 	font-size: 18px;
 	color: var( --text-color);
