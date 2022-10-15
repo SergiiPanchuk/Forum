@@ -2,12 +2,12 @@
     background-image: url(../img/header/header-background.jpeg);
     background-size: cover;
     background-position: center;
+    
 }
 .background-darkened {
     background-color:var(--background-darkened);
 }
 .nav__container {
-    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,8 +90,7 @@
     margin-top: 20px;
 }
 .header__social-links a:hover {
-    width: 30px;
-    height: 30px;
+   background-color: var(--modal-bg-color);
     transition: all 0.3s ease;
 }
 .header__social-links a img{
@@ -212,10 +211,21 @@
 }
 @media (min-width: 1043px) {
     .nav__container {
+        padding: 20px 24px;
+    }
+    .article__container {
+        padding: 250px 24px 270px;
+    }
+    .contacts__container {
+        padding: 40px 24px;
+    }
+}
+@media (min-width: 1200px) {
+    .nav__container {
         padding: 20px 0;
     }
     .article__container {
-        padding: 250px 0px 270px;
+        padding: 250px 0 270px;
     }
     .contacts__container {
         padding: 40px 0;

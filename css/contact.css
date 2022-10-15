@@ -20,7 +20,9 @@
 		display: flex;
 	}
 }
-.contact__text {}
+.contact__text {
+	
+}
 @media (min-width:767.5px) {
 	.contact__text {
 		width: 58%;

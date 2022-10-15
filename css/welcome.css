@@ -1,6 +1,6 @@
 .welcome__section {
     background-color: var(--main-background-color);
-    padding: 90px 20px 50px 20px;
+    padding: 90px 24px 50px 24px;
 }
 .welcome__title {
     color: var(--text-color);
@@ -10,7 +10,7 @@
         max-width: 66%;
     }
     .welcome__section{
-        padding: 90px 32px 50px 32px;
+        padding: 90px 24px 50px 24px;
     }
 }
 .welcome__title h2 {
