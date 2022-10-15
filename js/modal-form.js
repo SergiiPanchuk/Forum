@@ -4,9 +4,9 @@
 	const closeButton = document.querySelector(".close-button");
 
 
-	function toggleModal(ev) {
+	function toggleModal() {
 		modal.classList.toggle("show-modal");
-		ev.stopPropagation();
+		event.stopPropagation();
 	}
 
 	function showModal() {
@@ -22,7 +22,7 @@
 		if(error === 0){
 			toggleModal();
 		}
-		modal.reset();
+		
 	}
 
 	trigger.addEventListener("click", showModal);
