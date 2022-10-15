@@ -1,29 +1,149 @@
 .pricing__section {
-}
-.pricing__container {
+	background: var(--main-background-color);
+	color: var(--text-color);
+	padding: 90px 24px 15px 24px;
 }
 
-.pricing__text {
+.pricing__container {}
+
+@media (min-width:991.5px) {
+	.pricing__container {
+		display: flex;
+	}
 }
+
+.pricing__text {}
+
+@media (min-width:991.5px) {
+	.pricing__text {
+		width: 34%;
+	}
+}
+
 .pricing__text-title {
+	font-family: var(--font-family);
+	font-size: 14px;
+	color: var(--icons-color);
 }
-.pricing__text-subtitle {
+
+.pricing__text .pricing__text-subtitle {
+	font-family: var(--font-header-title);
+	font-size: 34px;
+	padding: 20px 0 25px 0;
 }
-.span__dot {
+
+@media (min-width:767.5px) {
+	.pricing__text .pricing__text-subtitle {
+		font-size: 38px;
+	}
 }
-.pricing__cards {
+
+@media (min-width:991.5px) {
+	.pricing__text .pricing__text-subtitle {
+		font-size: 42px;
+	}
 }
-.card__easy {
+
+.pricing__text p {
+	font-family: var(--font-family);
+	font-size: 18px;
+	padding: 0 0 40px 0;
 }
+
+.pricing__cards {}
+
+@media (min-width:767.5px) {
+	.pricing__cards {
+		display: flex;
+
+	}
+}
+
+@media (min-width:991.5px) {
+	.pricing__cards {
+		width: 66%;
+		;
+	}
+}
+
+.card__easy,
+.card__enterprise {
+	background: var(--cards-background-color);
+	padding: 31px 27px;
+	margin: 10px 10px;
+}
+
+@media (min-width:767.5px) {
+
+	.card__easy,
+	.card__enterprise {
+		width: 50%;
+
+	}
+}
+
+.pricing__cards h4 {
+	font-family: var(--font-header-title);
+	font-size: 28px;
+}
+
+@media (min-width:767.5px) {
+	.pricing__cards h4 {
+		font-size: 31px;
+	}
+}
+
+@media (min-width:991.5px) {
+	.pricing__cards h4 {
+		font-size: 34px;
+	}
+}
+
+.pricing__cards p {
+	font-family: var(--font-header-title);
+	font-size: 26px;
+	padding: 0 0 30px 0;
+}
+
+.pricing__cards p span {
+	font-size: 16px;
+	color: var(--color-header-location);
+}
+
 .card__logo {
+	width: 50px;
+	height: 50px;
+	margin: 25px 0 25px 0;
 }
+
+@media (min-width:767.5px) {
+	.card__logo {
+		width: 70px;
+		height: 70px;
+	}
+}
+
 .card__easy-img {
+	margin: 0 0 15px 0;
+	display: flex;
+	align-items: center;
 }
+
 .easy__icon {
+	width: 20px;
+	height: 24px;
+	margin: 0 10px 0 0;
 }
+
+.card__easy-img span {
+	font-family: var(--font-family);
+	font-size: 16px;
+	color: var(--color-header-location);
+	display: block;
+}
+
 .card__button {
 	cursor: pointer;
 }
 
-.card__enterprise {
-}
+.card__enterprise {}
