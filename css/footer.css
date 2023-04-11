@@ -1,0 +1,29 @@
+footer {
+	background: var(--background-contact-color);
+	padding: 40px 24px 40px 24px;
+	text-align: center;
+}
+
+.footer__nav {}
+
+@media (min-width:767.5px) {
+	.footer__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.footer__nav-links {
+	padding: 10px 0 0 0;
+}
+
+.footer__nav-links a {
+	margin: 20px 20px;
+}
+
+.footer__text p {
+	font-family: var(--font-family);
+	font-size: 14px;
+	color: var(--secondary-font-color);
+}

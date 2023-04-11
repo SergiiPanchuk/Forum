@@ -1,0 +1,124 @@
+.contact {
+	background: var(--background-contact-color);
+	color: var(--text-color);
+	padding: 100px 24px 0 24px;
+	text-align: center;
+	
+}
+@media (min-width:767.5px) {
+	.contact   {
+		text-align: left;
+	}
+}
+.contact__container {
+	border-bottom: 1px solid var(--text-color);
+	padding-bottom: 50px;
+}
+
+@media (min-width:767.5px) {
+	.contact__container  {
+		display: flex;
+	}
+}
+.contact__text {
+	
+}
+@media (min-width:767.5px) {
+	.contact__text {
+		width: 58%;
+	}
+}
+.contact__text h2 {
+	font-family: var(--font-family);
+	font-size: 14px;
+	color: var(--icons-color);
+}
+
+.contact__text-title {
+	font-family: var(--font-header-title);
+	font-size: 34px;
+	padding: 20px 0 25px 0;
+}
+@media (min-width:767.5px) {
+	.contact__text-title  {
+		font-size: 38px;
+	}
+}
+
+@media (min-width:991.5px) {
+	.contact__text-title {
+		font-size: 42px;
+	}
+}
+
+.contact__text-subtitle {
+	font-family: var(--font-family);
+	font-size: 18px;
+	padding: 0 0 25px 0;
+	line-height: 1.6;
+}
+
+.contact__text-text {
+	font-family: var(--font-family);
+	font-size: 16px;
+	color: var(--secondary-font-color);
+	padding: 0 0 20px 0;
+	line-height: 1.6;
+}
+
+.contact__text-social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width:767.5px) {
+	.contact__text-social {
+		justify-content: left;
+	}
+}
+.social__text {
+	font-family: var(--font-header-title);
+	font-size: 22px;
+	display: inline-block;
+	padding: 20px 15px 0 0;
+}
+@media (min-width:991.5px) {
+	.social__text {
+		padding: 0 15px 0 0;
+	}
+}
+
+.contact__phone {
+	padding: 50px 0 0 0;
+}
+@media (min-width:767.5px) {
+	.contact__phone {
+		width: 42%;
+		padding: 0 0 0 20px;
+	}
+}
+
+.contact__phone-title {
+	font-family: var(--font-header-title);
+	font-size: 22px;
+	margin: 16px 0 10px 0;
+}
+
+.contact__phone-text {
+	font-family: var(--font-family);
+	font-size: 16px;
+	color: var(--secondary-font-color);
+	line-height: 1.6;
+}
+
+.contact__phone a {
+	font-size: 16px;
+	font-family: var(--font-family);
+	text-decoration: none;
+	color: var(--text-color);
+	margin: 0 0 16px 0;
+}
+.contact__phone a:hover{
+	color: rgb(96, 197, 164);
+}

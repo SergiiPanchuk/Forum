@@ -1,0 +1,173 @@
+.testimonial__container {
+    padding: 100px 24px 0 24px;
+}
+@media (min-width: 1200px) {
+    .testimonial__container {
+        padding: 100px 0px 0px ;
+    }  
+}
+
+
+.testimonials__feedbacks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: var(--background-contact-color);
+}
+
+.section__feedback-first,
+.section__feedback-second,
+.section__feedback-third {
+    padding: 35px;
+}
+
+#testimonials {
+    color: var(--text-color);
+    background-color: var(--background-contact-color);
+}
+
+#testimonials .testimonials__subheading {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--icons-color);
+}
+
+#testimonials .testimonials__heading {
+    font-family: var(--font-header-title);
+    font-size: 34px;
+    margin: 20px 0;
+}
+
+#testimonials .testimonials__description {
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+.apostrophes {
+    width: 70px;
+    height: 70px;
+    color: var(--section__subheading-color);
+}
+
+.testimonial__text {
+    color: var(--grey-small-text-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.testimonial__text p {
+    margin-top: 20px;
+}
+
+.testimonial__text-date {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.section__profile {
+    display: flex;
+    padding: 7.5px 0;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 70px;
+    height: 70px;
+}
+
+.section__profile-info {
+    display: flex;
+    align-content: flex-end;
+    padding: 0 10px;
+    flex-direction: column;
+}
+
+.section__profile-info p {
+    margin: 5px;
+}
+
+.profile-name {
+    color: var(--text-color);
+    font-size: 22px;
+    font-family: var(--font-header-title);
+}
+
+.profile-position {
+    color: var(--text-color);
+}
+
+
+.slider__container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__track {
+    display: flex;
+    transition: .2s;
+}
+
+.slider__item {
+    background: var(--cards-background-color);
+    padding: 30px;
+    height: 100%;
+}
+
+.slider__buttons {
+    text-align: center;
+}
+
+.btn__prev,
+.btn__next {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media(min-width: 766.5px) {
+
+    .btn__prev,
+    .btn__next {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.btn__next {
+    top: 50%;
+    right: 0%;
+}
+
+.btn__prev {
+    top: 50%;
+    left: 0%;
+}
+
+.btn__prev-svg,
+.btn__next-svg {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    display: block;
+    fill: #141414;
+
+}
+
+@media(min-width: 766.5px) {
+
+    .btn__prev-svg,
+    .btn__next-svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.btn__prev-svg {
+    transform: rotateY(180deg);
+}

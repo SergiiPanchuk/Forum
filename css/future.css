@@ -1,0 +1,60 @@
+.future__section {
+	background-color: var(--main-background-color);
+	color: var(--text-color);
+	padding: 90px 24px 50px 24px;
+}
+.future__text {
+
+}
+.future__text h2 {
+	font-family: var(--font-family);
+	font-size: 14px;
+	color: var(--icons-color);
+}
+.future__text p {
+	font-family: var(--font-header-title);
+	font-size: 34px;
+	color: var( --text-color);
+	padding: 20px 0 25px 0;
+}
+.future__text>span {
+	font-family: var(--font-family);
+	font-size: 18px;
+	color: var( --text-color);
+}
+.future__carousel-slides {
+	padding: 10px;
+	min-height: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.future__slide {
+	width: 100%;
+	margin: 10px;
+	
+
+}
+.future__slide img {
+	background: var(--cards-background-color);
+	width: 100%;
+	height: 100%;
+}
+.future__carousel {
+	position: relative;
+}
+.future__carousel-btn-prev, .future__carousel-btn-next {
+	position: absolute;
+	width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   border: none;
+	cursor: pointer;
+}
+.future__carousel-btn-next {
+	top: 50%;
+   right: 0%;
+}
+.future__carousel-btn-prev {
+	top: 50%;
+	left: 0%;
+}
